@@ -1,8 +1,10 @@
-name: Validate v17.4
+name: Android Build v17.4
 
 on:
   push:
-    branches: [ upload-v17-4 ]
+    branches: [ main, upload-v17-4 ]
+  pull_request:
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
